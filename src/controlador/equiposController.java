@@ -18,7 +18,7 @@ public class equiposController implements ActionListener{
     FrmPrincipal VistaPrincipal;
     frmEquipos VistaEquipos;
     equiposModel ModeloEquipos;
-     DefaultTableModel TablaUsuarios = new DefaultTableModel();
+    DefaultTableModel TablaUsuarios = new DefaultTableModel();
 
 
     public equiposController(FrmPrincipal VistaPrincipal, frmEquipos VistaEquipos, equiposModel ModeloEquipos) {
