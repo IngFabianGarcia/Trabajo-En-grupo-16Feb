@@ -50,8 +50,4 @@ public class EquiposReparacion {
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
-
-    
- 
-    
 }

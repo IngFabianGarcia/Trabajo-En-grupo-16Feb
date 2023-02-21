@@ -1,13 +1,16 @@
 
 package trabajo_en_equipo;
 
-import controlador.compusReparacionController;
+import controlador.registroPropietariosController;
+import controlador.equipoReparacionController;
 import controlador.equiposController;
-import modelo.compusReparacionModel;
+import modelo.registroPropietariosModel;
 import modelo.equiposModel;
+import modelo.reparacionModel;
 import vista.FrmPrincipal;
 import vista.frmEquipos;
-import vista.frmCompusReparacion;
+import vista.frmRegistroPropietarios;
+import vista.registRep;
 
 /**
  *
@@ -20,18 +23,17 @@ public class Trabajo_en_equipo {
     public static void main(String[] args) {
         FrmPrincipal VistaPrincipal = new FrmPrincipal();
         frmEquipos VistaEquipos = new frmEquipos(VistaPrincipal, true);
-        frmCompusReparacion vistaPcRepa = new frmCompusReparacion(VistaPrincipal, true);
+        frmRegistroPropietarios vistaPcRepa = new frmRegistroPropietarios(VistaPrincipal, true);
+        registRep VistaReparacionEquipo = new registRep(VistaPrincipal, true);
         
         equiposModel ModeloUsuarios = new equiposModel();
-        compusReparacionModel ModeloPcRepa= new compusReparacionModel();
+        registroPropietariosModel ModeloPcRepa= new registroPropietariosModel();
+        reparacionModel ModeloReparacionEquipos = new reparacionModel();
         
         
         equiposController ControladorUsuarios = new equiposController(VistaPrincipal,VistaEquipos,ModeloUsuarios);
-        compusReparacionController ControladorPcRepa = new compusReparacionController(VistaPrincipal, vistaPcRepa,ModeloPcRepa);
-        
-        
-  
-       
+        registroPropietariosController ControladorPcRepa = new registroPropietariosController(VistaPrincipal, vistaPcRepa,ModeloPcRepa);
+        equipoReparacionController ControladorReparacionEquipos = new equipoReparacionController(VistaPrincipal,
+        VistaReparacionEquipo,ModeloReparacionEquipos);     
     }
-    
 }

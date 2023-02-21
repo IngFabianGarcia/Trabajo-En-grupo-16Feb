@@ -11,25 +11,25 @@ import java.util.ArrayList;
  *
  * @author umg
  */
-public class compusReparacionModel {
-    public ArrayList<compusReparacion> ListaPc = new ArrayList<>();
+public class registroPropietariosModel {
+    public ArrayList<registroPropietarios> ListaPropietarios = new ArrayList<>();
     
     
     
-    public void IngresarComputadoras(String marca, String modelo, String tipoPc, String problemaPresenta)
+    public void IngresarComputadoras(String Apellidos, String Nombre, String Telefono)
     {
         //Esto crea los usuarios usando la java clas usuarios
-        compusReparacion NuevaPc = new compusReparacion(marca,modelo,tipoPc,problemaPresenta);
+        registroPropietarios NuevoPropietario = new registroPropietarios(Apellidos,Nombre,Telefono);
         
         //Esto agrega los usuarios al array list para que lo muestre en la lista
-        this.ListaPc.add(NuevaPc);
+        this.ListaPropietarios.add(NuevoPropietario);
     }
     
     //En vez de ser static o void tiene que ser arrray list para que devuelva la lista ya creada
-    public ArrayList ListarUsuarios()
+    public ArrayList ListarPropietarios()
     {
         //Este bro enviara la lista al metodo que se esta llamando
-        return ListaPc;
+        return ListaPropietarios;
         
     }
     

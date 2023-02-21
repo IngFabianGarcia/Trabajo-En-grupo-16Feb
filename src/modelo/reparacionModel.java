@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @author Fabian
  */
 public class reparacionModel {
-    public ArrayList<EquiposReparacion> ListaReparacion = new ArrayList<>();
+    public ArrayList<EquiposReparacion> ListaReparacion = new ArrayList<EquiposReparacion>();
     
     
     

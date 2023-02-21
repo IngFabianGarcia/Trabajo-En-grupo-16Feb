@@ -66,11 +66,6 @@ public class equiposController implements ActionListener{
                 this.ModeloEquipos.ListaUsuarios.get(0).getModelo(),
                 this.ModeloEquipos.ListaUsuarios.get(0).getTipoComputadora(),
                 this.ModeloEquipos.ListaUsuarios.get(0).getProblemaComputadora()});
-         
-         
-    
         }
-        
-    }
-    
+    } 
 }
